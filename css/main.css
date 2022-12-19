@@ -100,40 +100,73 @@ html {
   background-image: url(../img/bkgd2.jpg);
   background-size: cover;
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  padding: 2em;
+  padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between; 
-  font-weight: 600;
-}
-
-.div-1, .div-2, .div-3 {
+  color:rgb(33, 73, 25);
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: rgb(33, 73, 25);
-  line-height: 1.5em;
-  font-size: 1em;
-  background-color: #768486bd;
-  height: auto;
-  width: 30%;
-  text-align: center;
-
 }
 
-.wrapper span {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.3em;
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    max-width: 1200px;
   }
-  
+
+header,
+footer {
+    background-color:#768486bd;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
+main {
+    width: 100%;
+    background-color: #768486bd;
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    font-size: 1.3em;
+}
+
+.flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: rgb(33, 73, 25);
+    line-height: 1.5em;
+    font-size: 1em;
+    background-color: #768486bd;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+  }
+
+
+footer {
+    display: flex;
+    justify-content: right;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+footer i {
+    padding: 30px 20px 0 0;
+}
 
 
 /* ==========================================================================
