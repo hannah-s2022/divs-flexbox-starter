@@ -97,12 +97,13 @@ textarea {
 
 
 html {
-  background-color: #fff;
+  background-image: url(../img/bkgd2.jpg);
+  background-size: cover;
   height: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
@@ -111,22 +112,28 @@ body {
 .wrapper {
   display: flex;
   justify-content: space-between; 
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .div-1, .div-2, .div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: rgb(33, 73, 25);
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  height: 300px;
+  font-size: 1em;
+  background-color: #768486bd;
+  height: auto;
   width: 30%;
+  text-align: center;
+
 }
 
-
+.wrapper span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+  }
+  
 
 
 /* ==========================================================================
